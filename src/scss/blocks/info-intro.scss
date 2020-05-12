@@ -1,0 +1,9 @@
+.info-intro{}
+@media (min-width: $tablet-width) {
+  .info-intro{}
+}
+@media (min-width: $desctop-width) {
+  .info-intro{
+    padding-top: 85px;
+  }
+}

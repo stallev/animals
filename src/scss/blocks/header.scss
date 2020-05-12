@@ -1,2 +1,105 @@
 .header{
+  &__upper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  &__toggle{
+    display: flex;
+    align-items: center;
+  }
+  &__toggle-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #006D4D;
+  }
+  &__toggle-button--cross{
+    display: none;
+  }
+  &__contacts-block{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 72px;
+  }
+  &__bottom{
+    padding: 20px 15px 220px;
+    display: flex;
+    background: #E7FFF7;
+    background-image: url('../img/decor/header_bg_animals.png');
+    background-size: 90%;
+    background-position: center 290px;
+    background-repeat: no-repeat;
+  }
+  &__bottom-menu-link{
+    display: inline-block;
+    padding: 17px 38px;
+    background: #FFA953;
+    border-radius: 50px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+  }
+}
+@media (min-width: $tablet-width) {
+  .header{
+    &__upper{
+      padding-top: 15px;
+    }
+    &__contacts-block{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 0;
+    }
+    &__bottom{
+    padding: 20px 15px 320px;
+    background-size: 90%;
+    background-position: center 175px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .header{
+    &__upper{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 25px;
+    }
+    &__contacts-block{
+      flex-direction: row-reverse;
+      order: 2;
+    }
+    &__toggle{
+      display: none;
+    }
+    &__contacts-block{
+      display: flex;
+    }
+    &__bottom{
+    padding: 20px 15px 310px;
+    background-size: 50%;
+    background-position: center 155px;
+    }
+  }
 }

@@ -1,0 +1,38 @@
+.contacts-block-item{
+  display: flex;
+  align-items: center;
+  width: 190px;
+  margin-bottom: 25px;
+  &__image{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+  &__info{
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #595757;
+  }
+  &__text{
+    display: block;
+  }
+  &__time{
+    font-weight: bold;
+  }
+}
+@media (min-width: $tablet-width) {
+  .contacts-block-item{
+    width: auto;
+    margin-left: 30px;
+    &__image{
+      margin-right: 20px;
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .contacts-block-item{}
+}
